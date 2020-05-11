@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch",
+      "command": "${workspaceFolder}/node_modules/.bin/babel",
+      "args": ["public_html/js/src", "--out-dir", "public_html/js/build_es5", "-w"],
+      //"args": ["public_html/js/src", "--out-dir", "public_html/js", "-w", "--source-maps"],
+      "type": "shell",
+      "group": { "kind": "build", "isDefault": true },
+      "isBackground": true
+    }
+  ]
+}
